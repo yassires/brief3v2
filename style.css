@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding-inline-start: 0px;
+}
+.box1 nav{
+    display: flex;
+    padding: 5px;
+    
+}
+.box1{
+    background-color: black;
+    padding: 1px;
+}
+nav ul li{
+    
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+    
+}
+nav ul li a{
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   font-family:"cairo";
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6%;   
+    flex: 50%;
+    flex-wrap: wrap;
+}
+nav ol{
+    margin-left: 30px;
+}
+nav ol li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+section div{
+    border-style: solid;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:"cairo";
+    margin-bottom: 10px;
+}
+.paragraphe{
+    padding-left: 6%;
+    font-weight: bold;
+    font-family:"cairo";
+}
+.gray{
+    color: gray;
+}
+.green{
+    color: green;
+}
+nav ol li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:"cairo";
+}
+@media (max-width: 546px){
+    section{display: block;}
+    section div{
+        width: 100%;
+    }
+}
+
+@media(max-width:960px){
+    .box1 nav{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .box1 nav div{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+   border: 1px solid white;
+        padding-left: 0%;
+    }
+    section{
+        display: flex;
+        padding-left: 0%;
+        flex: 100%;
+        
+    }
+    section div {
+        margin-bottom: 5%;
+        padding: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}
